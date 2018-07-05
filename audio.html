@@ -1,0 +1,27 @@
+<html>
+<!Html code to play audio on button onclick-->
+<h1 align="center">Audio player</h1>
+<body bgcolor="lightblue" align="center">
+<audio id="myAudio">
+  <source src="newyork.mp3" type="audio/mpeg">
+</audio>
+<p><b><i>Click the buttons to play or pause the audio.</i></b></p>
+
+<button onclick="playAudio()" type="button">Play Audio</button>
+<button onclick="pauseAudio()" type="button">Pause Audio</button> 
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+    x.play();
+   alert("Newyork Nagaram song is being played,Composer:AR Rahman"); 
+} 
+
+function pauseAudio() { 
+    x.pause();
+   alert("Song is paused.. Please press play audio button to resume!"); 
+} 
+</script>
+
+</body>
+</html>
