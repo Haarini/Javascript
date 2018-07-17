@@ -1,0 +1,21 @@
+<html>
+<!Javascript prompt-->
+<h3>Javascript prompt</h3>
+<head>
+<script>
+function pro()
+ {
+    var person = prompt("Please enter your name","name");
+    if (person != null) {
+        document.getElementById("demo").innerHTML =
+        "Hello " + person + "! Thanks for your feedback!! We will look at it as soon as possible!!";
+}
+}
+</script>
+</head>
+<body>
+<textarea>Please provide your feedback</textarea><br>
+<button onclick="pro()">Submit</button>
+<p id="demo"></p>
+</body>
+</html>
