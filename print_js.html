@@ -1,0 +1,38 @@
+<html>
+<-!Printing a page-->
+<head>
+<script>
+function printpage() 
+{
+window.print();
+}
+</script>
+</head>
+<body>
+<p align="center">Student details</p>
+<form>
+<p align="center">Name:<input type:"Text"><br>
+<p align="center">Roll number:<input type:"Text"><br>
+<p align="center">CGPA:<input type:"Text"><br>
+<p align="center">Collegename:<input type:"Text"><br>
+<p align="center">Mobile No.<input type:"Text"><br>
+<p align="center">Counrty:<select>
+  <option value="India">India</option>
+  <option value="China">China</option>
+  <option value="USA">USA</option>
+  <option value="Uk">UK</option>
+</select>
+  <br>
+<p align="center">State:
+<select>
+  <option value="Tamilnadu">Tamilnadu</option>
+  <option value="Maharashtra">Maharashtra</option>
+  <option value="Karnataka">Karnataka</option>
+  <option value="kerala">Kerala</option>
+</select>  
+<br>
+
+<button onclick="printpage()">Print this page</button>
+</form>
+</body>
+</html>
